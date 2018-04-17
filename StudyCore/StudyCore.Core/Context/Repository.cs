@@ -133,7 +133,18 @@ namespace StudyCore.Core.Context
                 if (list.Any())
                 {
                     var entity = list.FirstOrDefault();
-                    var modifyFiled = GetModifyFiled(entity);
+                    var modifyFiled = new List<string>();
+                    PropertyInfo[] properties = entity.GetType().GetProperties();
+                    for (var i = 0; i < properties.Length; i++)
+                    {
+                        PropertyInfo propertyInfo = properties[i];
+                        var flag = propertyInfo.GetValue(entity) != null || propertyInfo.GetValue(entity).ToString() != DateTime.MinValue.ToString();
+                        if (flag)
+                        {
+                            modifyFiled.Add(propertyInfo.Name);
+                        }
+                    }
+
                     var context = this.GetDbContext();
                     foreach (var current in list)
                     {

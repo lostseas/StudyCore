@@ -1,0 +1,11 @@
+E:\GitHub\StudyCore\StudyCore\StudyCore.NetNote\bin\Debug\netcoreapp2.0\StudyCore.NetNote.deps.json
+E:\GitHub\StudyCore\StudyCore\StudyCore.NetNote\bin\Debug\netcoreapp2.0\StudyCore.NetNote.runtimeconfig.json
+E:\GitHub\StudyCore\StudyCore\StudyCore.NetNote\bin\Debug\netcoreapp2.0\StudyCore.NetNote.runtimeconfig.dev.json
+E:\GitHub\StudyCore\StudyCore\StudyCore.NetNote\bin\Debug\netcoreapp2.0\StudyCore.NetNote.dll
+E:\GitHub\StudyCore\StudyCore\StudyCore.NetNote\bin\Debug\netcoreapp2.0\StudyCore.NetNote.pdb
+E:\GitHub\StudyCore\StudyCore\StudyCore.NetNote\obj\Debug\netcoreapp2.0\StudyCore.NetNote.csprojResolveAssemblyReference.cache
+E:\GitHub\StudyCore\StudyCore\StudyCore.NetNote\obj\Debug\netcoreapp2.0\StudyCore.NetNote.csproj.CoreCompileInputs.cache
+E:\GitHub\StudyCore\StudyCore\StudyCore.NetNote\obj\Debug\netcoreapp2.0\StudyCore.NetNote.AssemblyInfoInputs.cache
+E:\GitHub\StudyCore\StudyCore\StudyCore.NetNote\obj\Debug\netcoreapp2.0\StudyCore.NetNote.AssemblyInfo.cs
+E:\GitHub\StudyCore\StudyCore\StudyCore.NetNote\obj\Debug\netcoreapp2.0\StudyCore.NetNote.dll
+E:\GitHub\StudyCore\StudyCore\StudyCore.NetNote\obj\Debug\netcoreapp2.0\StudyCore.NetNote.pdb

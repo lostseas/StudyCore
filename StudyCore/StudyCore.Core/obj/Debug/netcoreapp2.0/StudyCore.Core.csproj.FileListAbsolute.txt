@@ -1,0 +1,12 @@
+E:\GitHub\StudyCore\StudyCore\StudyCore.Core\obj\Debug\netcoreapp2.0\StudyCore.Core.csprojResolveAssemblyReference.cache
+E:\GitHub\StudyCore\StudyCore\StudyCore.Core\obj\Debug\netcoreapp2.0\StudyCore.Core.csproj.CoreCompileInputs.cache
+E:\GitHub\StudyCore\StudyCore\StudyCore.Core\obj\Debug\netcoreapp2.0\StudyCore.Core.AssemblyInfoInputs.cache
+E:\GitHub\StudyCore\StudyCore\StudyCore.Core\obj\Debug\netcoreapp2.0\StudyCore.Core.AssemblyInfo.cs
+E:\GitHub\StudyCore\StudyCore\StudyCore.Core\bin\Debug\netcoreapp2.0\StudyCore.Core.deps.json
+E:\GitHub\StudyCore\StudyCore\StudyCore.Core\bin\Debug\netcoreapp2.0\StudyCore.Core.dll
+E:\GitHub\StudyCore\StudyCore\StudyCore.Core\bin\Debug\netcoreapp2.0\StudyCore.Core.pdb
+E:\GitHub\StudyCore\StudyCore\StudyCore.Core\bin\Debug\netcoreapp2.0\StudyCore.Data.dll
+E:\GitHub\StudyCore\StudyCore\StudyCore.Core\bin\Debug\netcoreapp2.0\StudyCore.Data.pdb
+E:\GitHub\StudyCore\StudyCore\StudyCore.Core\obj\Debug\netcoreapp2.0\StudyCore.Core.csproj.CopyComplete
+E:\GitHub\StudyCore\StudyCore\StudyCore.Core\obj\Debug\netcoreapp2.0\StudyCore.Core.dll
+E:\GitHub\StudyCore\StudyCore\StudyCore.Core\obj\Debug\netcoreapp2.0\StudyCore.Core.pdb

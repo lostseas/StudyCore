@@ -1,0 +1,9 @@
+E:\GitHub\StudyCore\StudyCore\StudyCore.Entity\bin\Debug\netcoreapp2.0\StudyCore.Entity.deps.json
+E:\GitHub\StudyCore\StudyCore\StudyCore.Entity\bin\Debug\netcoreapp2.0\StudyCore.Entity.dll
+E:\GitHub\StudyCore\StudyCore\StudyCore.Entity\bin\Debug\netcoreapp2.0\StudyCore.Entity.pdb
+E:\GitHub\StudyCore\StudyCore\StudyCore.Entity\obj\Debug\netcoreapp2.0\StudyCore.Entity.csprojResolveAssemblyReference.cache
+E:\GitHub\StudyCore\StudyCore\StudyCore.Entity\obj\Debug\netcoreapp2.0\StudyCore.Entity.csproj.CoreCompileInputs.cache
+E:\GitHub\StudyCore\StudyCore\StudyCore.Entity\obj\Debug\netcoreapp2.0\StudyCore.Entity.AssemblyInfoInputs.cache
+E:\GitHub\StudyCore\StudyCore\StudyCore.Entity\obj\Debug\netcoreapp2.0\StudyCore.Entity.AssemblyInfo.cs
+E:\GitHub\StudyCore\StudyCore\StudyCore.Entity\obj\Debug\netcoreapp2.0\StudyCore.Entity.dll
+E:\GitHub\StudyCore\StudyCore\StudyCore.Entity\obj\Debug\netcoreapp2.0\StudyCore.Entity.pdb
