@@ -12653,6 +12653,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://118.31.251.81/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
