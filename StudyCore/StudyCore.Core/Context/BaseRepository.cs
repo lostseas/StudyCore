@@ -15,7 +15,7 @@ using Microsoft.EntityFrameworkCore.Internal;
 
 namespace StudyCore.Core.Context
 {
-    public abstract partial class BaseRepository<TEntity, T> where TEntity : BaseModel<T> where T : struct
+    public abstract partial class BaseRepository<TEntity, T> : IBaseRepository<TEntity, T> where TEntity : BaseModel<T> where T : struct
     {
         #region cort
         private readonly DbContext _context;

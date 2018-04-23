@@ -12,83 +12,35 @@ using StudyCore.Data;
 namespace StudyCore.Core.Context
 {
     /// <summary>实体相关的仓储接口</summary>
-    public interface IRepository<TEntity, T> where TEntity : BaseModel<T> where T : struct
+    public interface IRepository<TEntity, T> : IBaseRepository<TEntity, T> where TEntity : BaseModel<T> where T : struct
     {
-        /// <summary>
-        /// 获得Dbcontext
-        /// </summary>
-        /// <returns></returns>
-        DbContext GetDbContext();
 
-        /// <summary>
-        /// get entity by Id
-        /// </summary>
-        /// <param name="Id"></param>
-        /// <returns></returns>
-        TEntity GetById(object Id);
+        new int Delete(T Id);
+
+        new Task<int> DeleteAsync(T Id);
+
+        int Delete(IEnumerable<T> IdList);
+
+        Task<int> DeleteAsync(IEnumerable<T> IdList);
 
 
-        /// <summary>
-        /// get entity by Id
-        /// </summary>
-        /// <param name="Id"></param>
+        /// <summary>判断对象是否存在</summary>
+        /// <param name="whereLambd">条件表达式</param>
         /// <returns></returns>
-        Task<TEntity> GetByIdAsync(object Id);
+        bool Any(Expression<System.Func<TEntity, bool>> whereLambd);
+        /// <summary>判断对象是否存在</summary>
+        /// <returns></returns>
+        bool Any();
 
         /// <summary>
-        /// Add
-        /// </summary>
-        /// <param name="entity"></param>
-        TEntity Add(TEntity entity);
-
-
-        /// <summary>
-        /// 异步提交
-        /// </summary>
-        /// <param name="entity">新增实体对象</param>
-        Task<TEntity> AddAsync(TEntity entity);
-
-
-        /// <summary>批量新增</summary>
-        /// <typeparam name="T">泛型</typeparam>
-        /// <param name="entities">新增集合</param>
+        /// 分页查询
+        /// </summary
+        /// <param name="whereLambd"></param>
+        /// <param name="orderLambd"></param>
+        /// <param name="pageIndex"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="sort"></param>
         /// <returns></returns>
-        void Add(IEnumerable<TEntity> entities);
-
-
-        /// <summary>批量新增</summary>
-        /// <typeparam name="T">泛型</typeparam>
-        /// <param name="entities">新增集合</param>
-        /// <returns></returns>
-        void AddAsync(IEnumerable<TEntity> entities);
-
-
-
-        /// <summary>单个对象指定列修改</summary>
-        /// <param name="entity">要修改的实体对象</param>
-        int Update(TEntity entity);
-
-        /// <summary>单个对象指定列修改</summary>
-        /// <param name="entity">要修改的实体对象</param>
-        Task<int> UpdateAsync(TEntity entity);
-
-        /// <summary>批量修改</summary>
-        /// <param name="entities"></param>
-        int Update(IEnumerable<TEntity> entities);
-
-
-        /// <summary>批量修改</summary>
-        /// <param name="entities"></param>
-        Task<int> UpdateAsync(IEnumerable<TEntity> entities);
-
-
-        int Delete(TEntity entity);
-
-        Task<int> DeleteAsync(TEntity entity);
-
-        int Delete(IEnumerable<TEntity> entities);
-
-        Task<int> DeleteAsync(IEnumerable<TEntity> entities);
-
+        MPage<TEntity> GetPageList(Expression<Func<TEntity, bool>> whereLambd, Expression<Func<TEntity, bool>> orderLambd, int pageIndex, int pageSize, bool sort = true);
     }
 }

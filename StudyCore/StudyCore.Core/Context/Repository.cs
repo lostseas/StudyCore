@@ -34,7 +34,7 @@ namespace StudyCore.Core.Context
 
         /// <summary>
         /// 分页查询
-        /// </summary>
+        /// </summary
         /// <param name="whereLambd"></param>
         /// <param name="orderLambd"></param>
         /// <param name="pageIndex"></param>
@@ -48,6 +48,60 @@ namespace StudyCore.Core.Context
             result.TotalCount = entites.Count();
             result.RowEntities = entites.Skip(pageSize * (pageIndex - 1)).Take(pageSize);
             return result;
-        }     
+        }
+
+        public virtual int Delete(T Id)
+        {
+            var entity = GetById(Id);
+            if (entity != null)
+            {
+                entity.UpdateDateTime = DateTime.Now;
+                entity.UpdateUserId = 1;
+                entity.DataFlag = (int)BaseModelDataFlagType.无效;
+                return Update(entity);
+            }
+            return 0;
+        }
+
+        public virtual Task<int> DeleteAsync(T Id)
+        {
+            var entity = GetById(Id);
+            if (entity == null)
+                throw new Exception("null");
+            entity.UpdateDateTime = DateTime.Now;
+            entity.UpdateUserId = 1;
+            entity.DataFlag = (int)BaseModelDataFlagType.无效;
+            return UpdateAsync(entity);
+        }
+
+        public virtual int Delete(IEnumerable<T> IdList)
+        {
+            var entitys = GetQueryable(t => IdList.Contains(t.Id));
+            if (entitys == null)
+                throw new Exception("null");
+            entitys.ForEachAsync(t =>
+            {
+                t.UpdateDateTime = DateTime.Now;
+                t.UpdateUserId = 1;
+                t.DataFlag = (int)BaseModelDataFlagType.无效;
+            });
+
+            return Update(entitys);
+        }
+
+        public virtual Task<int> DeleteAsync(IEnumerable<T> IdList)
+        {
+            var entitys = GetQueryable(t => IdList.Contains(t.Id));
+            if (entitys == null)
+                throw new Exception("null");
+            entitys.ForEachAsync(t =>
+            {
+                t.UpdateDateTime = DateTime.Now;
+                t.UpdateUserId = 1;
+                t.DataFlag = (int)BaseModelDataFlagType.无效;
+            });
+            return UpdateAsync(entitys);
+        }
+         
     }
 }
